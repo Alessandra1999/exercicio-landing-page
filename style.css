@@ -15,7 +15,7 @@ a:hover {
 #logo h2 {
     float: left;
     margin-top: 17px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 #logo a {
@@ -48,7 +48,7 @@ nav ul li {
 
 nav ul li a:link {
     display: block;
-    margin-right: 30px;
+    margin-right: 50px;
     padding-bottom: 3px;
     text-transform: uppercase;
 }
@@ -59,4 +59,53 @@ nav ul li a:hover {
 
 body {
     background-color: #fffdb2;
+}
+
+#sobre {
+    display: block;
+    width: 400px;
+    height: 250px;
+    margin-top: -10px;
+    margin-left: 60px;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    color: #2b3200;
+    font-size: 17px;
+}
+
+#sobre h1 {
+    color: #2b3200;
+    font-size: 30px;
+}
+
+#produtos {
+    display: block;
+    float: right;
+    margin-top: -290px;
+    margin-right: 60px;
+    padding: 25px 25px 25px 25px;
+}
+
+#produtos h3 {
+    color: #2b3200;
+    font-size: 20px;
+}
+
+section#galeria {
+    margin-top: 10px;
+    background-color: #d3cb83;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+
+section#galeria a {
+    display: inline-block;
+    padding: 20px;
+    background-color: #2b3200;
+    border-radius: 10px;
+}
+
+section#galeria h3 {
+    color: #2b3200;
+    font-size: 20px;
 }
