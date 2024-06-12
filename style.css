@@ -3,7 +3,9 @@
     margin: 0 auto;
 }
 
-a:link, a:active, a:visited {
+a:link,
+a:active,
+a:visited {
     color: #2b3200;
     text-decoration: none;
 }
@@ -58,7 +60,7 @@ nav ul li a:hover {
 }
 
 body {
-    background-color: #fffdb2;
+    background-color: #f7f6da;
 }
 
 #sobre {
@@ -70,12 +72,15 @@ body {
     text-align: center;
     padding: 25px 25px 25px 25px;
     color: #2b3200;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #sobre h1 {
     color: #2b3200;
     font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
 }
 
 #produtos {
@@ -84,28 +89,99 @@ body {
     margin-top: -290px;
     margin-right: 60px;
     padding: 25px 25px 25px 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #produtos h3 {
     color: #2b3200;
     font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 section#galeria {
     margin-top: 10px;
     background-color: #d3cb83;
-    padding: 10px 30px 10px 30px;
+    padding: 2px 30px 10px 30px;
     border-radius: 10px;
 }
 
 section#galeria a {
     display: inline-block;
     padding: 20px;
-    background-color: #2b3200;
+    background-color: #8c913b;
     border-radius: 10px;
 }
 
 section#galeria h3 {
     color: #2b3200;
     font-size: 20px;
+    margin-top: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #8c913b;
+    margin-top: 20px;
+    color: #2b3200;
+}
+
+footer>p a {
+    padding: 2px 10px;
+    color: #2b3200;
+}
+
+#mensagem {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    display: block;
+    color: #2b3200;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 425px;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #2b3200;
+    border-radius: 1em;
+    color: #2b3200;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #8c913b;
+}
+
+input:focus, textarea:focus {
+    border-color: #8c913b;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+    color: #2b3200;
 }

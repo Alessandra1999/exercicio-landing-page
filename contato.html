@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h2><a href="#">Bordados da Ale</a></h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="graficos.html">Gráficos Disponíveis</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="mensagem">
+            <h2>Deixe sua mensagem pra gente!</h2>
+        </div>
+
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="texto" id="nome" name="nome_usuario">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email_usuario">
+            </div>
+            <div>
+                <label for="texto">Texto:</label>
+                <textarea id="texto" name="texto_usuario"></textarea>
+            </div>
+
+            <div class="button">
+                <button onclick="enviar()">Enviar</button>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
