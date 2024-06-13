@@ -184,20 +184,21 @@ textarea {
 .buttonGraficos {
     margin-left: .5em;
     color: #2b3200;
+    margin-top: -10px;
 }
 
 h2 {
     color: #2b3200;
-    margin-top: 20px;
 }
 
-.ghibli {
-    position: relative;
-    padding: 15px;
+.slider {
+    display: block;
+    padding: 15px 0 15px 0;
     max-width: 80%;
     margin: 0 auto;
     margin-top: 10px;
     background-color: #d3cb83;
+    border-radius: 10px;
 }
 
 .graficos-wrapper {
@@ -205,19 +206,14 @@ h2 {
 }
 
 .graficos {
-    display: flex;
-    flex-flow: row nowrap;
+    display: inline-block;
+    white-space: nowrap;
     gap: 15px;
 }
 
 .arrow-left, .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
+    font-size: 30px;
+    line-height: 280px;
     width: 40px;
     text-align: center;
     color: #2b3200;
@@ -225,13 +221,16 @@ h2 {
     border: none;
     background: linear-gradient(to left, transparent 0%, #4b5214 200%);
     opacity: 0.1;
-    transition: all 400ms ease-in-out;
+    transition: all 480ms ease-in-out;
 }
 
 .arrow-right {
-    left: auto;
-    right: 0;
+    float: right;
     background: linear-gradient(to right, transparent 0%, #2b3200 200%);
+}
+
+.arrow-left {
+    float: left;
 }
 
 .arrow-left:hover, .arrow-right:hover {
@@ -240,12 +239,12 @@ h2 {
 
 .item {
     opacity: 0.7;
-    transition: all 100ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .current-item {
     opacity: 1;
-    border: 5px solid #2b3200;
+    border: 3px solid #2b3200;
     box-shadow: 0 0 10px #2b3200;
 }
 
