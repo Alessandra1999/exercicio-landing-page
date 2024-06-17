@@ -28,24 +28,33 @@
             <h2>Deixe sua mensagem pra gente!</h2>
         </div>
 
-        <form>
+        <form name="formulario">
             <div>
                 <label for="nome">Nome:</label>
-                <input type="texto" id="nome" name="nome_usuario">
+                <input type="texto" id="nome" name="nome_usuario" required>
             </div>
             <div>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email_usuario">
+                <input type="email" id="email" name="email_usuario" required>
             </div>
             <div>
                 <label for="texto">Texto:</label>
                 <textarea id="texto" name="texto_usuario"></textarea>
             </div>
 
-            <div class="button">
-                <button onclick="enviar()">Enviar</button>
-            </div>
+            <button class="buttonEnviar" onclick="enviar()">Enviar</button>
+
         </form>
+
+        <footer id="rodape">
+            <p>
+                <a href="home.html">Home</a>
+                <a href="graficos.html">Gráficos Disponíveis</a>
+                <a href="contato.html">Contato</a>
+            </p>
+
+            <p>2024 -<a href="home.html">Bordados da Ale</a> - Todos os direitos reservados &copy;</p>
+        </footer>
 
         <script src="script.js"></script>
 </body>

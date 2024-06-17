@@ -64,11 +64,12 @@ body {
 }
 
 #sobre {
+    margin: 0 auto;
     display: block;
     width: 400px;
     height: 250px;
     margin-top: -10px;
-    margin-left: 60px;
+    margin-left: 50px;
     text-align: center;
     padding: 25px 25px 25px 25px;
     color: #2b3200;
@@ -84,10 +85,11 @@ body {
 }
 
 #produtos {
+    margin: 0 auto;
     display: block;
     float: right;
     margin-top: -290px;
-    margin-right: 60px;
+    margin-right: 50px;
     padding: 25px 25px 25px 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -99,6 +101,7 @@ body {
 }
 
 section#galeria {
+    margin: 0 auto;
     margin-top: 10px;
     background-color: #d3cb83;
     padding: 2px 30px 10px 30px;
@@ -123,7 +126,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     background-color: #8c913b;
-    margin-top: 20px;
+    margin-top: 40px;
     color: #2b3200;
 }
 
@@ -134,7 +137,7 @@ footer>p a {
 
 #mensagem {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 42px;
     width: 400px;
     display: block;
     color: #2b3200;
@@ -142,13 +145,14 @@ footer>p a {
 
 form {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 42px;
     margin-left: 425px;
     width: 400px;
     padding: 1em;
-    border: 1px solid #2b3200;
+    border: 1px solid #4b5214;
     border-radius: 1em;
     color: #2b3200;
+
 }
 
 form div+div {
@@ -177,14 +181,33 @@ textarea {
     height: 5em;
 }
 
-.button {
-    padding-left: 90px;
+.buttonEnviar {
+    margin-left: 45%;
+    margin-top: 10px;
+    color: #2b3200;
+    border: none;
+    border-radius: 25px;
+    background-color: #d3cb83;
+    padding: 10px 15px 10px 15px
 }
 
-.buttonGraficos {
+.buttonEnviar:hover {
+    background-color: #acb14f;
+    cursor: pointer;
+}
+
+.buttonSaibaMais {
     margin-left: .5em;
     color: #2b3200;
-    margin-top: -10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d3cb83;
+    padding: 10px 15px 10px 15px
+}
+
+.buttonSaibaMais:hover {
+    background-color: #acb14f;
+    cursor: pointer;
 }
 
 h2 {
@@ -253,5 +276,70 @@ h2 {
   }
   
   .graficos-wrapper {
+    -ms-overflow-style: none;
+  }
+
+  .slider2 {
+    display: block;
+    padding: 15px 0 15px 0;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #d3cb83;
+    border-radius: 10px;
+}
+
+.graficos-wrapper2 {
+    overflow-x: auto;
+}
+
+.graficos2 {
+    display: inline-block;
+    white-space: nowrap;
+    gap: 15px;
+}
+
+.arrow-left2, .arrow-right2 {
+    font-size: 30px;
+    line-height: 280px;
+    width: 40px;
+    text-align: center;
+    color: #2b3200;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, #4b5214 200%);
+    opacity: 0.1;
+    transition: all 480ms ease-in-out;
+}
+
+.arrow-right2 {
+    float: right;
+    background: linear-gradient(to right, transparent 0%, #2b3200 200%);
+}
+
+.arrow-left2 {
+    float: left;
+}
+
+.arrow-left2:hover, .arrow-right2:hover {
+    opacity: 1;
+}
+
+.item2 {
+    opacity: 0.7;
+    transition: all 150ms ease-in-out;
+}
+
+.current-item2 {
+    opacity: 1;
+    border: 3px solid #2b3200;
+    box-shadow: 0 0 10px #2b3200;
+}
+
+.graficos-wrapper2::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .graficos-wrapper2 {
     -ms-overflow-style: none;
   }
