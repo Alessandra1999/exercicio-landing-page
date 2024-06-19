@@ -1,3 +1,5 @@
+/* cabeçalho */
+
 #container {
     width: 100%;
     margin: 0 auto;
@@ -59,6 +61,8 @@ nav ul li a:hover {
     border-bottom: 1px solid #2b3200;
 }
 
+/* body home */
+
 body {
     background-color: #f7f6da;
 }
@@ -69,11 +73,12 @@ body {
     width: 400px;
     height: 250px;
     margin-top: -10px;
+    margin-bottom: 30px;
     margin-left: 50px;
     text-align: center;
     padding: 25px 25px 25px 25px;
     color: #2b3200;
-    font-size: 16px;
+    font-size: 17px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -88,10 +93,11 @@ body {
     margin: 0 auto;
     display: block;
     float: right;
-    margin-top: -290px;
+    margin-top: -320px;
     margin-right: 50px;
     padding: 25px 25px 25px 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
 }
 
 #produtos h3 {
@@ -100,9 +106,27 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#saibaMais {
+    margin-left: 33%;
+    color: #2b3200;
+    border: none;
+    border-radius: 25px;
+    background-color: #d3cb83;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#saibaMais:hover {
+    background-color: #acb14f;
+    cursor: pointer;
+    box-shadow: 0 0 10px #2b3200;
+}
+
 section#galeria {
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
     background-color: #d3cb83;
     padding: 2px 30px 10px 30px;
     border-radius: 10px;
@@ -118,9 +142,11 @@ section#galeria a {
 section#galeria h3 {
     color: #2b3200;
     font-size: 20px;
-    margin-top: 3px;
+    padding: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* rodapé */
 
 footer {
     padding: 20px 0;
@@ -134,6 +160,8 @@ footer>p a {
     padding: 2px 10px;
     color: #2b3200;
 }
+
+/* contato */
 
 #mensagem {
     margin: 0 auto;
@@ -165,14 +193,16 @@ label {
     text-align: right;
 }
 
-input, textarea {
+input,
+textarea {
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #8c913b;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #8c913b;
 }
 
@@ -185,6 +215,7 @@ textarea {
     margin-left: 45%;
     margin-top: 10px;
     color: #2b3200;
+    font-weight: 600;
     border: none;
     border-radius: 25px;
     background-color: #d3cb83;
@@ -194,30 +225,20 @@ textarea {
 .buttonEnviar:hover {
     background-color: #acb14f;
     cursor: pointer;
+    box-shadow: 0 0 10px #2b3200;
 }
 
-.buttonSaibaMais {
-    margin-left: .5em;
+/* página de gráficos */
+
+#graficosDisponiveis {
     color: #2b3200;
-    border: none;
-    border-radius: 25px;
-    background-color: #d3cb83;
-    padding: 10px 15px 10px 15px
-}
-
-.buttonSaibaMais:hover {
-    background-color: #acb14f;
-    cursor: pointer;
-}
-
-h2 {
-    color: #2b3200;
+    text-align: center;
 }
 
 .slider {
     display: block;
     padding: 15px 0 15px 0;
-    max-width: 80%;
+    max-width: 93%;
     margin: 0 auto;
     margin-top: 10px;
     background-color: #d3cb83;
@@ -234,7 +255,8 @@ h2 {
     gap: 15px;
 }
 
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
     font-size: 30px;
     line-height: 280px;
     width: 40px;
@@ -256,7 +278,8 @@ h2 {
     float: left;
 }
 
-.arrow-left:hover, .arrow-right:hover {
+.arrow-left:hover,
+.arrow-right:hover {
     opacity: 1;
 }
 
@@ -273,73 +296,16 @@ h2 {
 
 .graficos-wrapper::-webkit-scrollbar {
     display: none;
-  }
-  
-  .graficos-wrapper {
+}
+
+.graficos-wrapper {
     -ms-overflow-style: none;
-  }
-
-  .slider2 {
-    display: block;
-    padding: 15px 0 15px 0;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: #d3cb83;
-    border-radius: 10px;
 }
 
-.graficos-wrapper2 {
-    overflow-x: auto;
-}
-
-.graficos2 {
-    display: inline-block;
-    white-space: nowrap;
-    gap: 15px;
-}
-
-.arrow-left2, .arrow-right2 {
-    font-size: 30px;
-    line-height: 280px;
-    width: 40px;
-    text-align: center;
+#interesse {
     color: #2b3200;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, #4b5214 200%);
-    opacity: 0.1;
-    transition: all 480ms ease-in-out;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.arrow-right2 {
-    float: right;
-    background: linear-gradient(to right, transparent 0%, #2b3200 200%);
-}
-
-.arrow-left2 {
-    float: left;
-}
-
-.arrow-left2:hover, .arrow-right2:hover {
-    opacity: 1;
-}
-
-.item2 {
-    opacity: 0.7;
-    transition: all 150ms ease-in-out;
-}
-
-.current-item2 {
-    opacity: 1;
-    border: 3px solid #2b3200;
-    box-shadow: 0 0 10px #2b3200;
-}
-
-.graficos-wrapper2::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .graficos-wrapper2 {
-    -ms-overflow-style: none;
-  }

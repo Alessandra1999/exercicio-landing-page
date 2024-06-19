@@ -1,12 +1,16 @@
 function enviar() {
-    alert("Agradecemos o seu contato, responderemos em breve!");
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let texto = document.getElementById('texto').value;
+
+    if (nome == '' || email == '' || texto == '') {
+        alert("Você precisa preencher todos os campos!")
+    } else {
+        alert('Agradecemos o seu contato, responderemos em breve! 💞');
+    }
 }
 
-function saibaMais() {
-    window.open('https://studioghibli.com.br/studioghibli/');
-}
 
-//slider 1
 const controls = document.querySelectorAll('.control');
 
 let currentItem = 0;
@@ -28,7 +32,7 @@ controls.forEach(control => {
         }
 
         if (currentItem < 0) {
-            currentItem = maxItems -1;
+            currentItem = maxItems - 1;
         }
 
         items.forEach(item => item.classList.remove('current-item'));
@@ -42,38 +46,3 @@ controls.forEach(control => {
     });
 });
 
-//slider 2
-const controls2 = document.querySelectorAll('.control2');
-
-let currentItem2 = 0;
-const items2 = document.querySelectorAll('.item2');
-const maxItems2 = items2.length;
-
-controls2.forEach(control2 => {
-    control2.addEventListener('click', () => {
-        const isLeft2 = control2.classList.contains('arrow-left2');
-
-        if (isLeft2) {
-            currentItem2 -= 1;
-        } else {
-            currentItem2 += 1;
-        }
-
-        if (currentItem2 >= maxItems2) {
-            currentItem2 = 0;
-        }
-
-        if (currentItem2 < 0) {
-            currentItem2 = maxItems2 -1;
-        }
-
-        items2.forEach(item2 => item2.classList.remove('current-item2'));
-
-        items2[currentItem2].scrollIntoView({
-            inline: "center",
-            behavior: "smooth",
-        });
-
-        items2[currentItem2].classList.add('current-item2');
-    });
-});

@@ -28,7 +28,7 @@
             <h2>Deixe sua mensagem pra gente!</h2>
         </div>
 
-        <form name="formulario">
+        <form id="formulario">
             <div>
                 <label for="nome">Nome:</label>
                 <input type="texto" id="nome" name="nome_usuario" required>
@@ -39,10 +39,10 @@
             </div>
             <div>
                 <label for="texto">Texto:</label>
-                <textarea id="texto" name="texto_usuario"></textarea>
+                <textarea id="texto" name="texto_usuario" required></textarea>
             </div>
 
-            <button class="buttonEnviar" onclick="enviar()">Enviar</button>
+            <button type="submit" class="buttonEnviar" onclick="enviar()">Enviar</button>
 
         </form>
 
