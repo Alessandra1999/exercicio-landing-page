@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
-/* cabeçalho */
+/* Início da estilização geral das páginas */
+
+/* body */
+
+body {
+    background-color: #f7f6da;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+/* header */
 
 a:link,
 a:active,
@@ -18,17 +27,14 @@ nav ul li a:hover {
     transition: 300ms linear;
 }
 
-#logo {
-    margin-left: 5em;
-}
-
 .navbar {
     background-color: #8c913b;
     font-family: "Playwrite DE Grund", cursive;
     font-weight: 700;
+    position: absolute;
 }
 
-#nav-principal {
+#navbar-links {
     margin-right: 5em;
 }
 
@@ -36,14 +42,25 @@ nav ul li {
     padding: 1em;
 }
 
-/* body */
+/* footer */
 
-body {
-    background-color: #f7f6da;
-    font-family: "Playwrite DE Grund", cursive;
+footer {
+    background-color: #8c913b;
+    margin-top: 50px;
+    font-size: 0.8em;
 }
 
-/* home */
+footer p a {
+    padding: 1em;
+    font-weight: 700;
+}
+
+footer p a:hover {
+    transform: scale(1.3);
+    transition: 300ms linear;
+}
+
+/* Início da estilização da página Home */
 
 #sobre {
     margin-top: 200px;
@@ -84,3 +101,26 @@ body {
     color: #4b5214;
     border-bottom: 1px solid #2b3200;
 }
+
+/* galeria */
+
+#galeria {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #d3cb83;
+}
+
+#galeria h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#imagens {
+    padding: 20px;
+    gap: 10px;
+    background-color: #8c913b;
+    border-radius: 10px;
+}
+
+
+
