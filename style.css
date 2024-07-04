@@ -1,11 +1,10 @@
-* {
-    margin: 0 auto;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
 /* cabeçalho */
 
-a:link, a:active, a:visited {
+a:link,
+a:active,
+a:visited {
     color: #2b3200;
     text-decoration: none;
 }
@@ -14,6 +13,74 @@ a:hover {
     color: #4b5214;
 }
 
+nav ul li a:hover {
+    transform: scale(1.3);
+    transition: 300ms linear;
+}
+
+#logo {
+    margin-left: 5em;
+}
+
 .navbar {
     background-color: #8c913b;
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 700;
+}
+
+#nav-principal {
+    margin-right: 5em;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+/* body */
+
+body {
+    background-color: #f7f6da;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+/* home */
+
+#sobre {
+    margin-top: 200px;
+}
+
+#sobre h1 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#sobre h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#sobre ul {
+    margin-left: 50px;
+}
+
+#saibaMais {
+    margin-top: 50px;
+}
+
+#btn-saibaMais {
+    color: #2b3200;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#btn-saibaMais:hover {
+    color: #4b5214;
+    border-bottom: 1px solid #2b3200;
 }
