@@ -4,27 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráficos Disponíveis</title>
+    <title>Bordados da Ale</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <div id="logo">
-                <h2><a href="home.html">Bordados da Ale</a></h2>
-            </div>
 
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="graficos.html">Gráficos Disponíveis</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-md fixed-top">
+                <a class="navbar-brand" href="home.html">
+                    <img id="logo" src="imagens/logo.png" class="d-inline-block align-top" alt="Logo Bordados da Ale">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="graficos.html">Gráficos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <h2 id="graficosDisponiveis">Gráficos Disponíveis</h2>
+    <main>
+
+        <h2 class="text-center" id="graficosDisponiveis">Gráficos Disponíveis</h2>
 
         <div class="slider">
             <button class="arrow-left control" aria-label="Previous image">⮜</button>
@@ -62,21 +82,33 @@
             </div>
         </div>
 
-        <div id="interesse">
+        <div id="interesse" class="text-center">
             <p>Gostou de algum? Entre em contato conosco e solicite seu orçamento 💞</p>
         </div>
+    </main>
 
-        <footer id="rodape">
+
+    <footer class="footer text-center py-2 sticky-bottom">
+        <div class="container">
             <p>
                 <a href="home.html">Home</a>
                 <a href="graficos.html">Gráficos Disponíveis</a>
                 <a href="contato.html">Contato</a>
             </p>
+            <p>2024 - <a href="home.html">Bordados da Ale</a> - Todos os direitos reservados &copy;</p>
+            </div>
+    </footer>
 
-            <p>2024 -<a href="home.html">Bordados da Ale</a> - Todos os direitos reservados &copy;</p>
-        </footer>
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
