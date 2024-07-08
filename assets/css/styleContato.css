@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+/* Início da estilização geral da página */
+
+/* body */
+
+body {
+    background-color: #f7f6da;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+/* header */
+
+a:link,
+a:active,
+a:visited {
+    color: #2b3200;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4b5214;
+}
+
+nav ul li a:hover {
+    transform: scale(1.3);
+    transition: 300ms linear;
+}
+
+.navbar {
+    background-color: #8c913b;
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 700;
+    position: absolute;
+}
+
+#nav-principal {
+    margin-right: 5em;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+/* footer */
+
+footer {
+    background-color: #8c913b;
+    margin-top: 50px;
+    font-size: 0.8em;
+    width: 100%;
+    
+    bottom: 0;
+}
+
+footer p a {
+    padding: 1em;
+    font-weight: 700;
+}
+
+/* Início estilização da página contato */
+
+#mensagem {
+    margin-top: 200px;
+}
