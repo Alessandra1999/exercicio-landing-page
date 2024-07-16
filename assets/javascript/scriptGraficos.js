@@ -1,16 +1,3 @@
-function enviar() {
-    let nome = document.getElementById('nome').value;
-    let email = document.getElementById('email').value;
-    let texto = document.getElementById('texto').value;
-
-    if (nome == '' || email == '' || texto == '') {
-        alert("Você precisa preencher todos os campos!")
-    } else {
-        alert('Agradecemos o seu contato, responderemos em breve! 💞');
-    }
-}
-
-
 const controls = document.querySelectorAll('.control');
 
 let currentItem = 0;

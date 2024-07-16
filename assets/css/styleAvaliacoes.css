@@ -57,45 +57,13 @@ footer p a {
     font-weight: 700;
 }
 
-/* Início estilização da página contato */
+/* Cards */
 
-#mensagem {
+.card {
     margin-top: 200px;
-}
-
-form {
-    margin-top: 50px;
-    font-weight: 600;
-    color: #2b3200;
-}
-
-#container-form {
     border: 2px solid #2b3200;
-    border-radius: 25px;
-    padding: 20px;
 }
 
-textarea {
-    resize: none;
-}
-
-input:focus, textarea:focus {
-    outline: none !important;
-    border: 2px solid #8c913b !important;
-    box-shadow: 0 0 5px #2b3200 !important;
-}
-
-.btn-custom {
-    background-color: #8c913b;
-    border: none;
-    color: #2b3200;
-    font-weight: 600;
-}
-
-.btn-custom:hover {
-    transform: scale(1.1);
-    transition: 300ms linear;
-}
 
 @media (min-height: 834px) {
     footer {
