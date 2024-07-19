@@ -109,7 +109,7 @@ function loadReviews(reviews) {
         const reviewCard = document.createElement('div');
         reviewCard.classList.add('.col-4');
         reviewCard.innerHTML = `
-                    <div class="card" style="width: 18rem;">
+                    <div class="card style=width: 300px;">
                         <div class="card-body">
                             <h5 class="card-title">${r.nome}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">${r.produto}</h6>
@@ -129,7 +129,7 @@ function loadReviews(reviews) {
                         window.location.reload();
                     }
                     
-                    reviewCard.appendChild(btnDelete);
+                    reviewCard.appendChild(btnDelete)
         reviewsContainer.appendChild(reviewCard);
     });
 }
