@@ -63,8 +63,22 @@ footer p a {
     margin-top: 20px;
 }
 
-.tab-button {
-    margin-top: 160px;
+h2 {
+    font-weight: 600;
+}
+
+.card {
+    margin-top: 70px;
+    border: 2px solid #2b3200;
+    background-color: #f5f3cc;
+}
+
+/* formulário */
+
+#container-form {
+    border: 2px solid #2b3200;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 .btn-custom {
@@ -85,23 +99,14 @@ footer p a {
     box-shadow: none;
 }
 
+.tab-button {
+    margin-top: 160px;
+}
+
 .tab {
     display: none;
 }
 
 .tab.active {
     display: flex;
-}
-
-.card {
-    margin-top: 70px;
-    border: 2px solid #2b3200;
-}
-
-/* formulário */
-
-#container-form {
-    border: 2px solid #2b3200;
-    border-radius: 25px;
-    padding: 20px;
 }

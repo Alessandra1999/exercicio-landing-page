@@ -119,33 +119,12 @@ function loadReviews(reviews) {
                             <h5 class="card-title">${r.nome}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">${r.produto}</h6>
                             <p class="card-text">${r.comentario}</p>
+                            <button class="btn btn-warning" onclick="editReview(${r.id})">Editar</button>
+                            <button class="btn btn-danger" onclick="deleteReview(${r.id})">Excluir</button>
                         </div>
                     </div>
                     `;
 
-                    const btnEdit = document.createElement('button');
-
-                    btnEdit.className = 'btn btn-warning';
-                    btnEdit.id = r.id;
-                    btnEdit.innerHTML = 'Editar';
-                    btnEdit.onclick = () => {
-                        editReview(r.id);
-                    }
-                    
-                    reviewCard.appendChild(btnEdit);
-
-                    const btnDelete = document.createElement('button');
-
-                    btnDelete.className = 'btn btn-danger';
-                    btnDelete.id = r.id;
-                    btnDelete.innerHTML = 'Excluir';
-                    btnDelete.onclick = () => {
-                        const id = r.id;
-                        database.removeReview(id);
-                        window.location.reload();
-                    }
-                    
-                    reviewCard.appendChild(btnDelete)
         reviewsContainer.appendChild(reviewCard);
     });
 }
@@ -182,5 +161,10 @@ function saveChanges(id) {
 }
 
 function cancelEdit(id) {
+    loadReviews();
+}
+
+function deleteReview(id) {
+    database.removeReview(id);
     loadReviews();
 }
