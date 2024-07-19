@@ -49,33 +49,61 @@
     </header>
 
     <main>
-        <div class="container cards">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Maria</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Quadrinho do No Face tricotando</h6>
-                            <p class="card-text">Muito delicado, chegou dentro do prazo. Trabalho maravilhoso, recomendo
-                                muito!
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-sm-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Maria</h5>
+        <div class="container tab-button text-right">
+            <button class="btn btn-custom tab-btn" onclick="loadContent('tab1')">Fazer uma avaliação</button>
+        </div>
+        <div id="tab1" class="tab"></div>
+        <div class="container tab-content">
+            <div class="text-center">
+                <h2>Avaliações</h2>
+            </div>
+
+            <div class="container-fluid container-cards">
+                
+                    <div class="card style=width: 300px;">
+                        <div class="card-body .col-4">
+                            <h5 class="card-title">Maria Santos</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Quadrinho do No Face tricotando</h6>
-                            <p class="card-text">Muito delicado, chegou dentro do prazo. Trabalho maravilhoso, recomendo
+                            <p class="card-text">Muito delicado, chegou dentro do prazo. Trabalho maravilhoso,
+                                recomendo
                                 muito!
                             </p>
                         </div>
                     </div>
-                </div>
+                
+
+                
+                    <div class="card style=width: 300px;">
+                        <div class="card-body .col-4">
+                            <h5 class="card-title">João da Silva</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Quadrinho do Calcifer</h6>
+                            <p class="card-text">Chegou dentro do prazo e é muito lindo, uma delicadeza de
+                                trabalho!</p>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="card style=width: 300px;">
+                        <div class="card-body .col-4">
+                            <h5 class="card-title">Letícia Soares</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Quadrinho do Pato</h6>
+                            <p class="card-text">Combina arte e habilidade manual, resultando em uma peça única
+                                que
+                                exibe detalhes intricados e texturas variadas, refletindo a dedicação e o
+                                talento do
+                                artesão.
+                            </p>
+                        </div>
+                    </div>
+                
+
+                <div id="reviewsContainer"></div>
             </div>
         </div>
+
+
     </main>
 
     <footer class="footer text-center py-2 sticky-bottom">
@@ -89,6 +117,7 @@
         </div>
     </footer>
 
+    <script src="assets/javascript/scriptAvaliacoes.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

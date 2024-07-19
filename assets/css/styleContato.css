@@ -97,6 +97,10 @@ input:focus, textarea:focus {
     transition: 300ms linear;
 }
 
+.btn-custom:focus {
+    box-shadow: none;
+}
+
 @media (min-height: 834px) {
     footer {
         position: absolute;

@@ -50,6 +50,7 @@ footer {
     font-size: 0.8em;
     width: 100%;
     bottom: 0;
+    position: absolute;
 }
 
 footer p a {
@@ -59,11 +60,65 @@ footer p a {
 
 /* Cards */
 
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-button {
+    margin-top: 160px;
+}
+
+.btn-custom {
+    background-color: #8c913b;
+    border: none;
+    color: #2b3200;
+    font-weight: 600;
+    margin: 0 15px;
+}
+
+.btn-custom:hover {
+    transform: scale(1.1);
+    transition: 300ms linear;
+    border: none;
+}
+
+.btn-custom:focus {
+    box-shadow: none;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: flex;
+}
+
 .card {
-    margin-top: 200px;
+    margin-top: 70px;
     border: 2px solid #2b3200;
 }
 
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+}
+
+.reviewsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+}
+
+
+/* formulário */
+
+#container-form {
+    border: 2px solid #2b3200;
+    border-radius: 25px;
+    padding: 20px;
+}
 
 @media (min-height: 834px) {
     footer {

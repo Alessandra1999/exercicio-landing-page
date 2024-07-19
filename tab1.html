@@ -1,0 +1,24 @@
+<div class="container tab-content">
+    <div class="content">
+        <form id="reviewForm" class="text-center">
+            <div id="container-form" class="container">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input class="form-control" type="texto" id="nome" name="nome_usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="produto">Produto:</label>
+                    <input class="form-control" type="text" id="produto" name="produto_usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Avaliação:</label>
+                    <textarea class="form-control" id="comentario" name="comentario_usuario" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-custom" onclick="registerReview()">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="assets/javascript/scriptAvaliacoes.js"></script>
