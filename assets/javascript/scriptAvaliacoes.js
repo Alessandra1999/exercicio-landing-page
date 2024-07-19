@@ -76,6 +76,10 @@ class Database {
     removeReview(id) {
         localStorage.removeItem(id);
     }
+
+    editReview(id, updatedReview) {
+        localStorage.setItem(id, JSON.stringify(updatedReview));
+    }
 }
 
 const database = new Database();
@@ -118,6 +122,17 @@ function loadReviews(reviews) {
                     </div>
                     `;
 
+                    const btnEdit = document.createElement('button');
+
+                    btnEdit.className = 'btn btn-warning';
+                    btnEdit.id = r.id;
+                    btnEdit.innerHTML = 'Editar';
+                    btnEdit.onclick = () => {
+                        editReview(r.id);
+                    }
+                    
+                    reviewCard.appendChild(btnEdit);
+
                     const btnDelete = document.createElement('button');
 
                     btnDelete.className = 'btn btn-danger';
@@ -132,4 +147,39 @@ function loadReviews(reviews) {
                     reviewCard.appendChild(btnDelete)
         reviewsContainer.appendChild(reviewCard);
     });
+}
+
+function editReview(id) {
+    const review = JSON.parse(localStorage.getItem(id));
+
+    if (review) {
+        document.getElementById('nome').value = review.nome;
+        document.getElementById('produto').value = review.produto;
+        document.getElementById('comentario').value = review.comentario;
+
+        document.getElementById('registerButton').style.display = 'none';
+
+        let btnSave = document.getElementById('saveButton');
+        if (!btnSave) {
+            btnSave = document.createElement('button');
+            btnSave.id = 'saveButton';
+            btnSave.innerHTML = 'Salvar Mudanças';
+            btnSave.className = 'btn btn-success';
+            document.body.appendChild(btnSave);
+        }
+        btnSave.style.display = 'inline';
+
+        btnSave.onclick = () => {
+            const nome = document.getElementById('nome').value;
+            const produto = document.getElementById('produto').value;
+            const comentario = document.getElementById('comentario').value;
+
+            const updatedReview = new Review(nome, produto, comentario);
+
+            if (updatedReview.validateData()) {
+                database.editReview(id, updatedReview);
+                window.location.reload;
+            }
+        };
+    }
 }

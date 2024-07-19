@@ -50,7 +50,6 @@ footer {
     font-size: 0.8em;
     width: 100%;
     bottom: 0;
-    position: absolute;
 }
 
 footer p a {
@@ -99,30 +98,10 @@ footer p a {
     border: 2px solid #2b3200;
 }
 
-.container-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 15px;
-}
-
-.reviewsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 15px;
-}
-
-
 /* formulário */
 
 #container-form {
     border: 2px solid #2b3200;
     border-radius: 25px;
     padding: 20px;
-}
-
-@media (min-height: 834px) {
-    footer {
-        position: absolute;
-        bottom: 0;
-    }
 }
