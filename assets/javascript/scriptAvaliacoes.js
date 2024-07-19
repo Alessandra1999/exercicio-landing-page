@@ -112,6 +112,7 @@ function loadReviews(reviews) {
     reviews.forEach((r) => {
         const reviewCard = document.createElement('div');
         reviewCard.classList.add('.col-4');
+        reviewCard.id = `review-${r.id}`;
         reviewCard.innerHTML = `
                     <div class="card style=width: 300px;">
                         <div class="card-body">
@@ -151,35 +152,35 @@ function loadReviews(reviews) {
 
 function editReview(id) {
     const review = JSON.parse(localStorage.getItem(id));
-
     if (review) {
-        document.getElementById('nome').value = review.nome;
-        document.getElementById('produto').value = review.produto;
-        document.getElementById('comentario').value = review.comentario;
-
-        document.getElementById('registerButton').style.display = 'none';
-
-        let btnSave = document.getElementById('saveButton');
-        if (!btnSave) {
-            btnSave = document.createElement('button');
-            btnSave.id = 'saveButton';
-            btnSave.innerHTML = 'Salvar Mudanças';
-            btnSave.className = 'btn btn-success';
-            document.body.appendChild(btnSave);
-        }
-        btnSave.style.display = 'inline';
-
-        btnSave.onclick = () => {
-            const nome = document.getElementById('nome').value;
-            const produto = document.getElementById('produto').value;
-            const comentario = document.getElementById('comentario').value;
-
-            const updatedReview = new Review(nome, produto, comentario);
-
-            if (updatedReview.validateData()) {
-                database.editReview(id, updatedReview);
-                window.location.reload;
-            }
-        };
+        const reviewCard = document.getElementById(`review-${id}`);
+        reviewCard.innerHTML = `
+            <div class="card" style="width: 300px;">
+                <div class="card-body">
+                    <input type="text" id="editNome-${id}" value="${review.nome}" class="form-control">
+                    <input type="text" id="editProduto-${id}" value="${review.produto}" class="form-control">
+                    <textarea id="editComentario-${id}" class="form-control">${review.comentario}</textarea>
+                    <button class="btn btn-success" onclick="saveChanges(${id})">Salvar Mudanças</button>
+                    <button class="btn btn-secondary" onclick="cancelEdit(${id})">Cancelar</button>
+                </div>
+            </div>
+        `;
     }
+}
+
+function saveChanges(id) {
+    const nome = document.getElementById(`editNome-${id}`).value;
+    const produto = document.getElementById(`editProduto-${id}`).value;
+    const comentario = document.getElementById(`editComentario-${id}`).value;
+
+    const updatedReview = new Review(nome, produto, comentario);
+
+    if (updatedReview.validateData()) {
+        database.editReview(id, updatedReview);
+        loadReviews();
+    }
+}
+
+function cancelEdit(id) {
+    loadReviews();
 }
