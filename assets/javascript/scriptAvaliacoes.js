@@ -119,8 +119,8 @@ function loadReviews(reviews) {
                             <h5 class="card-title">${r.nome}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">${r.produto}</h6>
                             <p class="card-text">${r.comentario}</p>
-                            <button class="btn btn-warning" onclick="editReview(${r.id})">Editar</button>
-                            <button class="btn btn-danger" onclick="deleteReview(${r.id})">Excluir</button>
+                            <button class="btn btn-edit" onclick="editReview(${r.id})">Editar</button>
+                            <button class="btn btn-delete" onclick="deleteReview(${r.id})">Excluir</button>
                         </div>
                     </div>
                     `;
@@ -139,8 +139,8 @@ function editReview(id) {
                     <input type="text" id="editNome-${id}" value="${review.nome}" class="form-control">
                     <input type="text" id="editProduto-${id}" value="${review.produto}" class="form-control">
                     <textarea id="editComentario-${id}" class="form-control">${review.comentario}</textarea>
-                    <button class="btn btn-success" onclick="saveChanges(${id})">Salvar Mudanças</button>
-                    <button class="btn btn-secondary" onclick="cancelEdit(${id})">Cancelar</button>
+                    <button class="btn btn-save" onclick="saveChanges(${id})">Salvar</button>
+                    <button class="btn btn-cancel" onclick="cancelEdit(${id})">Cancelar</button>
                 </div>
             </div>
         `;

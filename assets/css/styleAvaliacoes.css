@@ -81,6 +81,16 @@ h2 {
     padding: 20px;
 }
 
+form {
+    font-weight: 600;
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border: 2px solid #8c913b !important;
+    box-shadow: 0 0 5px #2b3200 !important;
+}
+
 .btn-custom {
     background-color: #8c913b;
     border: none;
@@ -110,3 +120,56 @@ h2 {
 .tab.active {
     display: flex;
 }
+
+.btn-edit {
+    background-color: #fad66c;
+    color: #2b3200;
+    border: none;
+}
+
+.btn-edit:hover {
+    transform: scale(1.1);
+    transition: 300ms linear;
+    border: none;
+}
+
+.btn-delete {
+    background-color: #ffa0aa;
+    color: #2b3200;
+    border: none;
+}
+
+.btn-delete:hover {
+    transform: scale(1.1);
+    transition: 300ms linear;
+    border: none;
+}
+
+.btn-save {
+    background-color: #95dda0;
+    color: #2b3200;
+    border: none;
+}
+
+.btn-save:hover {
+    transform: scale(1.1);
+    transition: 300ms linear;
+    border: none;
+}
+
+.btn-cancel {
+    background-color: #d1d1d1;
+    color: #2b3200;
+    border: none;
+}
+
+.btn-cancel:hover {
+    transform: scale(1.1);
+    transition: 300ms linear;
+    border: none;
+}
+
+/* vermelho: #DC3545
+    amarelo: #FFC107
+    verde: #28A745
+    cinza: #6C757D
