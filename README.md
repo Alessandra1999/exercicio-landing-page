@@ -2,7 +2,7 @@
 
 <hr/>
 
-###Atividades 3 e 4 do Módulo 03 do curso dev Full Stack Jr da +PraTi
+### Atividades 3 e 4 do Módulo 03 do curso dev Full Stack Jr da +PraTi
 
 <h2 align="center">Technologies</h2>
 
@@ -11,11 +11,11 @@
 - JavaScript
 - Bootstrap
 
-- Você pode acessar o resultado através desse link: https://bordadosdaale.netlify.app/
+Você pode acessar o resultado através desse link: https://bordadosdaale.netlify.app/
 
 <hr/>
 
-###Atividade 3:
+### Atividade 3:
 
 CONTEÚDO MÍNIMO DA LANDING PAGE:
 
@@ -31,7 +31,7 @@ OBJETIVO: Desenvolver uma landing page simples utilizando HTML, CSS e JavaScript
 - Ação de botão de chamada para ação (por exemplo, exibir uma mensagem de agradecimento ou redirecionar para outra página, utilizando JS, claro).
 - Escolha uma paleta de cores harmoniosa e fontes apropriadas.
 
-###Atividade 4:
+### Atividade 4:
 
 OBJETIVO: Aprimorar o projeto da atividade 03 com todo o conhecimento adquirido (e prévio, se houver). Faça o seu melhor.
 
