@@ -137,8 +137,8 @@ function editReview(id) {
             <div class="card" style="width: 300px;">
                 <div class="card-body">
                     <input type="text" id="editNome-${id}" value="${review.nome}" class="form-control">
-                    <input type="text" id="editProduto-${id}" value="${review.produto}" class="form-control">
-                    <textarea id="editComentario-${id}" class="form-control">${review.comentario}</textarea>
+                    <input type="text" id="editProduto-${id}" value="${review.produto}" class="form-control edit-produto">
+                    <textarea id="editComentario-${id}" class="form-control edit-form">${review.comentario}</textarea>
                     <button class="btn btn-save" onclick="saveChanges(${id})">Salvar</button>
                     <button class="btn btn-cancel" onclick="cancelEdit(${id})">Cancelar</button>
                 </div>
